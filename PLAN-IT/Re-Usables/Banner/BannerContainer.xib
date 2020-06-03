@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BannerContainer" customModule="PLAN_IT" customModuleProvider="target">
+            <connections>
+                <outlet property="backBanner" destination="mG2-C5-xxG" id="uoW-rM-aMd"/>
+                <outlet property="backBannerTop" destination="ecX-Ys-6dd" id="JVn-ZM-DOm"/>
+                <outlet property="frontBanner" destination="JQw-dw-nQm" id="3yG-bQ-NI0"/>
+                <outlet property="frontBannerTop" destination="EHP-rS-zIf" id="XoS-cC-oYF"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="352" height="106"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mG2-C5-xxG" userLabel="Back Banner View" customClass="BannerView" customModule="PLAN_IT" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="0.0" width="352" height="106"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JQw-dw-nQm" userLabel="Front Banner View" customClass="BannerView" customModule="PLAN_IT" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="0.0" width="352" height="106"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="JQw-dw-nQm" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" id="6tQ-kw-yCM"/>
+                <constraint firstItem="JQw-dw-nQm" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="EHP-rS-zIf"/>
+                <constraint firstItem="JQw-dw-nQm" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="MNY-WN-mgo"/>
+                <constraint firstItem="JQw-dw-nQm" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="N5l-Vf-tOh"/>
+                <constraint firstItem="mG2-C5-xxG" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="PYI-t3-0w1"/>
+                <constraint firstItem="mG2-C5-xxG" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" id="VOh-vj-b8I"/>
+                <constraint firstItem="mG2-C5-xxG" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="ecX-Ys-6dd"/>
+                <constraint firstItem="mG2-C5-xxG" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="iMg-fj-9up"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="49.600000000000001" y="-215.44227886056973"/>
+        </view>
+    </objects>
+</document>

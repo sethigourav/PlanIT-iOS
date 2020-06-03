@@ -1,0 +1,12 @@
+@font-face
+{
+    font-family: 'Karla-Regular';
+    src: local('Karla-Regular'),url('Karla-Regular.ttf') format('opentype');
+}
+body
+{
+    font-family: 'Karla-Regular';
+    font-size: 14px;
+    font-weight: normal;
+}
+img{max-width:100%;height:auto !important;width:auto !important;}

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="14903" systemVersion="18F132" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="DBAssessments" representedClassName="DBAssessments" syncable="YES" codeGenerationType="class">
+        <attribute name="assessmentValue" optional="YES" attributeType="Binary"/>
+    </entity>
+    <entity name="DBLesson" representedClassName="DBLesson" syncable="YES">
+        <attribute name="budgetCategory" optional="YES" attributeType="Binary"/>
+        <attribute name="budgetCategoryId" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="courseName" optional="YES" attributeType="String"/>
+        <attribute name="index" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="lessonId" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="lessonSavedDate" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="lessonValue" optional="YES" attributeType="Binary"/>
+        <attribute name="overSpentDescription" optional="YES" attributeType="String"/>
+        <attribute name="overSpentPercent" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <relationship name="lessonToVideo" optional="YES" toMany="YES" deletionRule="Cascade" ordered="YES" destinationEntity="DBLessonVideo" inverseName="videoToLesson" inverseEntity="DBLessonVideo"/>
+    </entity>
+    <entity name="DBLessonVideo" representedClassName="DBLessonVideo" syncable="YES" codeGenerationType="class">
+        <attribute name="originalUrl" optional="YES" attributeType="String"/>
+        <attribute name="thumbnailUrl" optional="YES" attributeType="String"/>
+        <attribute name="video" optional="YES" attributeType="String"/>
+        <attribute name="videoId" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="videoStatus" optional="YES" attributeType="String"/>
+        <attribute name="videoUrl" optional="YES" attributeType="String"/>
+        <relationship name="videoToLesson" optional="YES" maxCount="1" deletionRule="No Action" destinationEntity="DBLesson" inverseName="lessonToVideo" inverseEntity="DBLesson"/>
+    </entity>
+    <elements>
+        <element name="DBAssessments" positionX="-324" positionY="-288" width="128" height="60"/>
+        <element name="DBLesson" positionX="-462.703125" positionY="-341.05078125" width="128" height="193"/>
+        <element name="DBLessonVideo" positionX="-185.6015625" positionY="-377.84375" width="128" height="150"/>
+    </elements>
+</model>
